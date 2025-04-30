@@ -15,4 +15,10 @@ public class Destroy : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (gameObject.CompareTag("IgnoreDestroy")) return;
+        Destroy(gameObject);
+    }
 }
