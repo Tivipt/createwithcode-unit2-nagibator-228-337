@@ -5,7 +5,7 @@ public class DetectCollisionsX : MonoBehaviour
 {
     private GameObject gameOverText;
 
-    private void Start()
+    private void Awake()
     {
 
         gameOverText = GameObject.Find("GameOver");
